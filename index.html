@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./Hvue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" h-model="name">
+        {{name}}
+    </div>
+</body>
+</html>
+<script>
+let wf = new Hvue({
+    el: "#app",
+    data:{
+        msg: "QA是脑残",
+        text: '这是TEXT',
+        name: "123123",
+        html: "<b>这是一段代码！！！</b>"
+    },
+    created () {
+        console.log("开始执行created！")
+        setInterval(()=>{
+            wf.$data.name = "王者是网吧"
+        },3000)
+    },
+    methods: {
+        onClick(){
+            alert("那个傻逼敲我头？？？")
+        }
+    },
+})
+
+
+</script>
