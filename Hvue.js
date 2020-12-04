@@ -1,3 +1,4 @@
+console.log('git checkout -b test-pr')
 class Hvue {
     constructor(options) {
         this.$options = options;
