@@ -1,4 +1,4 @@
-console.log('git checkout -b test-pr')
+console.log('git checkout -b test-pr11111')
 class Hvue {
     constructor(options) {
         this.$options = options;
